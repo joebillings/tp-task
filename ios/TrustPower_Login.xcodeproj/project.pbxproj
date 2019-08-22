@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TrustPower_LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TrustPower_LoginTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -20,6 +19,12 @@
 		9363807497797C20A109627E /* libPods-TrustPower_Login.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAE42901AC9276580850EDE /* libPods-TrustPower_Login.a */; };
 		A1319B4D1FDA53A0E55947EC /* libPods-TrustPower_Login-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2355FD838EC01A725F88258 /* libPods-TrustPower_Login-tvOSTests.a */; };
 		E13D2145264987891765F607 /* libPods-TrustPower_LoginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 700843DD54C176C7D27C2E8E /* libPods-TrustPower_LoginTests.a */; };
+		7C36A510E48D4041B590EBCC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7B2312B12254583887D85AE /* Poppins-Bold.ttf */; };
+		E13D03A539AD47018F808DBD /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */; };
+		DE289E467C69494DBF1CF6AB /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */; };
+		BE80B3F608A6471C8EA0DAA1 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */; };
+		8DC0671DCA644F24B346674E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */; };
+		AB090C887FE74031A84812B6 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,12 @@
 		E685AE9D2AB009B6A5AFA1EE /* Pods-TrustPower_Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPower_Login.debug.xcconfig"; path = "Target Support Files/Pods-TrustPower_Login/Pods-TrustPower_Login.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		B7B2312B12254583887D85AE /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +176,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F0EE8EC724B1BACC068CF926 /* Pods */,
+				0D1EBA6A5B814927A4715176 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -196,6 +208,20 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		0D1EBA6A5B814927A4715176 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B7B2312B12254583887D85AE /* Poppins-Bold.ttf */,
+				4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */,
+				EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */,
+				C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */,
+				6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */,
+				BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -337,6 +363,12 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				7C36A510E48D4041B590EBCC /* Poppins-Bold.ttf in Resources */,
+				E13D03A539AD47018F808DBD /* Poppins-Light.ttf in Resources */,
+				DE289E467C69494DBF1CF6AB /* Poppins-Medium.ttf in Resources */,
+				BE80B3F608A6471C8EA0DAA1 /* Poppins-Regular.ttf in Resources */,
+				8DC0671DCA644F24B346674E /* Poppins-SemiBold.ttf in Resources */,
+				AB090C887FE74031A84812B6 /* Poppins-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +659,31 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/RNSVG\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-DevSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTActionSheet\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTImage\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTLinking\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTSettings\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTVibration\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTWebSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+				);
 				INFOPLIST_FILE = TrustPower_Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -646,6 +703,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/RNSVG\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-DevSupport\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTActionSheet\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTAnimation\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTImage\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTLinking\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTNetwork\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTSettings\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTVibration\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTWebSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+				);
 				INFOPLIST_FILE = TrustPower_Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

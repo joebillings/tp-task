@@ -1,13 +1,13 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
-import {StatusBar, View, AppRegistry, Text} from 'react-native';
+import {
+  StatusBar,
+  View,
+  AppRegistry,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import Svg, {
   G,
   Path,
@@ -16,8 +16,107 @@ import Svg, {
   Stop,
   Ellipse,
 } from 'react-native-svg';
+import SplashScreen from 'react-native-splash-screen';
+import CheckBox from 'react-native-check-box';
+
+const styles = StyleSheet.create({
+  welcomeContainer: {
+    flex: 3,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  leftContainer: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'stretch',
+  },
+  checkboxContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    marginLeft: 45,
+    marginRight: 100,
+    marginTop: 40,
+  },
+  heading: {
+    fontSize: 40,
+    fontFamily: 'Poppins-Regular',
+    textAlign: 'center',
+    margin: 10,
+    color: 'white',
+  },
+  subheading: {
+    fontSize: 20,
+    fontFamily: 'Poppins-Regular',
+    textAlign: 'center',
+    marginLeft: 80,
+    marginRight: 80,
+    lineHeight: 32,
+    color: 'white',
+  },
+  label: {
+    fontSize: 18,
+    fontFamily: 'Poppins-Regular',
+    textAlign: 'left',
+    marginTop: 14,
+    marginLeft: 65,
+    marginRight: 65,
+    marginBottom: 10,
+    color: 'white',
+  },
+  textInput: {
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+    backgroundColor: 'white',
+    flexDirection: 'column',
+    marginLeft: 45,
+    marginRight: 45,
+    marginBottom: 14,
+    height: 54,
+    borderRadius: 99,
+    paddingLeft: 28,
+    paddingRight: 28,
+  },
+  note: {
+    fontSize: 17,
+    fontFamily: 'Poppins-Regular',
+    textAlign: 'center',
+    color: '#999',
+  },
+
+  checkbox: {
+    marginRight: 10,
+  },
+  checkboxText: {
+    fontSize: 15,
+    fontFamily: 'Poppins-Regular',
+    color: '#fff',
+  },
+  cta: {
+    backgroundColor: 'rgb(255, 0, 133)',
+    borderRadius: 99,
+    padding: 10,
+    marginLeft: 45,
+    marginRight: 45,
+    marginBottom: 50,
+  },
+  ctaText: {
+    textAlign: 'center',
+    color: 'white',
+    fontFamily: 'Poppins-SemiBold',
+    fontSize: 18,
+  },
+});
 
 export default class Load extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {username: '', password: '', isCheck: 0};
+  }
+
+  componentDidMount() {
+    SplashScreen.hide();
+  }
+
   render() {
     // let pic = {
     //   uri: './resources/background.svg',
@@ -51,43 +150,58 @@ export default class Load extends Component {
               />
             </G>
           </Svg>
-          <View
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Svg
-              width="217px"
-              height="224px"
-              viewBox="0 0 217 224"
-              version="1.1">
-              <Defs>
-                <LinearGradient
-                  x1="18.7451482%"
-                  y1="90.7329063%"
-                  x2="89.8981821%"
-                  y2="79.2680093%"
-                  id="linearGradient-1">
-                  <Stop stopColor="#FF6D42" offset="0%" />
-                  <Stop stopColor="#CD0086" offset="40.3489718%" />
-                  <Stop stopColor="#2648B2" offset="100%" />
-                </LinearGradient>
-              </Defs>
-              <G
-                id="Page-1"
-                stroke="none"
-                stroke-width="1"
-                fill="none"
-                fill-rule="evenodd">
-                <G
-                  id="0"
-                  transform="translate(-79.000000, -294.000000)"
-                  fill="url(#linearGradient-1)">
-                  <Path
-                    d="M177.874974,517.505562 C144.729325,517.806761 111.69818,502.545312 92.4009138,470.943551 C73.1495195,439.41691 75.8787799,402.183367 92.7048696,372.80987 C109.564884,343.37715 140.578629,294 177.814496,294 C214.775644,294 246.027624,343.570221 263.264006,372.929216 C280.721672,402.665128 308.001913,452.288993 288.073547,483.009486 C268.298676,513.49336 210.92971,517.20519 177.874974,517.505562 L177.874974,517.505562 Z M177.644166,511.549669 C208.653263,511.266723 239.769188,496.48825 258.320263,467.935086 C277.015334,439.16029 274.12605,403.98111 257.748776,376.128536 C241.579093,348.629007 212.261186,328.271523 177.587431,328.271523 C142.655958,328.271523 113.561544,348.448164 97.7449353,376.016748 C81.9601521,403.529861 118.724952,415.564842 136.784946,445.094729 C154.887974,474.694978 146.549783,511.830193 177.644166,511.549669 L177.644166,511.549669 Z"
-                    id="Combined-Shape"
-                  />
-                </G>
-              </G>
-            </Svg>
+          <View style={styles.welcomeContainer}>
+            <Text style={styles.heading}>Log in</Text>
+            <Text style={styles.subheading}>
+              Please log in with your email and password.
+            </Text>
           </View>
+          <View style={styles.leftContainer}>
+            <Text style={styles.label}>Email address</Text>
+            <TextInput
+              style={styles.textInput}
+              placeholder="johnsmith@gmail.com"
+              onChange={username => this.setState({username})}
+              value={this.state.username}
+            />
+            <Text style={styles.label}>Password</Text>
+            <TextInput
+              style={styles.textInput}
+              placeholder="•••••••••"
+              textContentType="password"
+              secureTextEntry
+              onChange={password => this.setState({password})}
+              value={this.state.password}
+            />
+            <Text style={styles.note}>Forgot your password?</Text>
+          </View>
+          <View style={styles.checkboxContainer}>
+            <View>
+              <CheckBox
+                style={styles.checkbox}
+                onClick={() => {
+                  this.setState({
+                    isChecked: !this.state.isChecked,
+                  });
+                }}
+                isChecked={this.state.isChecked}
+                checkBoxColor={'white'}
+              />
+            </View>
+            <View>
+              <Text style={styles.checkboxText}>
+                You acknowledge that you have read the{' '}
+                <Text style={{color: 'rgb(255, 0, 133)'}}>Privacy Policy</Text>{' '}
+                and that you agree to the{' '}
+                <Text style={{color: 'rgb(255, 0, 133)'}}>
+                  Terms & Conditions
+                </Text>
+              </Text>
+            </View>
+          </View>
+          <TouchableOpacity style={styles.cta}>
+            <Text style={styles.ctaText}>Log in</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
