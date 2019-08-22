@@ -219,7 +219,7 @@ export default class Load extends Component {
                   onPress={() => {
                     this.setPPVisible(true);
                   }}>
-                  >Privacy Policy
+                  Privacy Policy
                 </Text>{' '}
                 and that you agree to the{' '}
                 <Text style={{color: 'rgb(255, 0, 133)'}}>

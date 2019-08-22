@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TrustPower_LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TrustPower_LoginTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -15,16 +16,16 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TrustPower_LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TrustPower_LoginTests.m */; };
+		7C36A510E48D4041B590EBCC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7B2312B12254583887D85AE /* Poppins-Bold.ttf */; };
 		8BABF964C42489F72F7039DE /* libPods-TrustPower_Login-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E894B5A813C3947A60C901 /* libPods-TrustPower_Login-tvOS.a */; };
+		8DC0671DCA644F24B346674E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */; };
 		9363807497797C20A109627E /* libPods-TrustPower_Login.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAE42901AC9276580850EDE /* libPods-TrustPower_Login.a */; };
 		A1319B4D1FDA53A0E55947EC /* libPods-TrustPower_Login-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2355FD838EC01A725F88258 /* libPods-TrustPower_Login-tvOSTests.a */; };
-		E13D2145264987891765F607 /* libPods-TrustPower_LoginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 700843DD54C176C7D27C2E8E /* libPods-TrustPower_LoginTests.a */; };
-		7C36A510E48D4041B590EBCC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7B2312B12254583887D85AE /* Poppins-Bold.ttf */; };
-		E13D03A539AD47018F808DBD /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */; };
-		DE289E467C69494DBF1CF6AB /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */; };
-		BE80B3F608A6471C8EA0DAA1 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */; };
-		8DC0671DCA644F24B346674E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */; };
 		AB090C887FE74031A84812B6 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */; };
+		BE80B3F608A6471C8EA0DAA1 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */; };
+		DE289E467C69494DBF1CF6AB /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */; };
+		E13D03A539AD47018F808DBD /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */; };
+		E13D2145264987891765F607 /* libPods-TrustPower_LoginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 700843DD54C176C7D27C2E8E /* libPods-TrustPower_LoginTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,23 +62,23 @@
 		28D232A0CA3D76FB05371CC6 /* Pods-TrustPower_Login-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPower_Login-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TrustPower_Login-tvOS/Pods-TrustPower_Login-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* TrustPower_Login-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrustPower_Login-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TrustPower_Login-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TrustPower_Login-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		6BAE42901AC9276580850EDE /* libPods-TrustPower_Login.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrustPower_Login.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		700843DD54C176C7D27C2E8E /* libPods-TrustPower_LoginTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrustPower_LoginTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84716AE5C5FA69B7A6519DFF /* Pods-TrustPower_Login-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPower_Login-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TrustPower_Login-tvOSTests/Pods-TrustPower_Login-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7B2312B12254583887D85AE /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		C1A962113AB4B516820B44EB /* Pods-TrustPower_Login-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPower_Login-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TrustPower_Login-tvOS/Pods-TrustPower_Login-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C2355FD838EC01A725F88258 /* libPods-TrustPower_Login-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrustPower_Login-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A00E3462055B42BD114206 /* Pods-TrustPower_Login-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPower_Login-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TrustPower_Login-tvOSTests/Pods-TrustPower_Login-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		CD347FE32D5EB08FF525E002 /* Pods-TrustPower_Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPower_Login.release.xcconfig"; path = "Target Support Files/Pods-TrustPower_Login/Pods-TrustPower_Login.release.xcconfig"; sourceTree = "<group>"; };
 		D2E894B5A813C3947A60C901 /* libPods-TrustPower_Login-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrustPower_Login-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E685AE9D2AB009B6A5AFA1EE /* Pods-TrustPower_Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustPower_Login.debug.xcconfig"; path = "Target Support Files/Pods-TrustPower_Login/Pods-TrustPower_Login.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		B7B2312B12254583887D85AE /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */ = {isa = PBXFileReference; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,19 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D1EBA6A5B814927A4715176 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7B2312B12254583887D85AE /* Poppins-Bold.ttf */,
+				4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */,
+				EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */,
+				C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */,
+				6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */,
+				BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* TrustPower_Login */ = {
@@ -208,20 +222,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		0D1EBA6A5B814927A4715176 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				B7B2312B12254583887D85AE /* Poppins-Bold.ttf */,
-				4F3DD6BC25A74A50BF33AD35 /* Poppins-Light.ttf */,
-				EB2646E23B5F441FBA257B0E /* Poppins-Medium.ttf */,
-				C81534A7CE794EEEACEDD89E /* Poppins-Regular.ttf */,
-				6F89B684F47A4A5BAFDEB04D /* Poppins-SemiBold.ttf */,
-				BDAC79444DE941EF97E36C3A /* Poppins-ExtraLight.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
