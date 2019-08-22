@@ -7,6 +7,8 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
+  Modal,
+  TouchableHighlight,
 } from 'react-native';
 import Svg, {
   G,
@@ -105,16 +107,37 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-SemiBold',
     fontSize: 18,
   },
+  privacyHeading: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 32,
+    color: '#001f27',
+    marginTop: 20,
+  },
+  privacySubheading: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 19,
+    color: '#001f27',
+  },
+  privacy: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 19,
+    color: '#001f27',
+    marginTop: 28,
+  },
 });
 
 export default class Load extends Component {
   constructor(props) {
     super(props);
-    this.state = {username: '', password: '', isCheck: 0};
+    this.state = {username: '', password: '', isCheck: false, ppVisible: false};
   }
 
   componentDidMount() {
     SplashScreen.hide();
+  }
+
+  setPPVisible(visible) {
+    this.setState({ppVisible: visible});
   }
 
   render() {
@@ -191,7 +214,13 @@ export default class Load extends Component {
             <View>
               <Text style={styles.checkboxText}>
                 You acknowledge that you have read the{' '}
-                <Text style={{color: 'rgb(255, 0, 133)'}}>Privacy Policy</Text>{' '}
+                <Text
+                  style={{color: 'rgb(255, 0, 133)'}}
+                  onPress={() => {
+                    this.setPPVisible(true);
+                  }}>
+                  >Privacy Policy
+                </Text>{' '}
                 and that you agree to the{' '}
                 <Text style={{color: 'rgb(255, 0, 133)'}}>
                   Terms & Conditions
@@ -203,6 +232,54 @@ export default class Load extends Component {
             <Text style={styles.ctaText}>Log in</Text>
           </TouchableOpacity>
         </View>
+        <Modal
+          animationType="slide"
+          transparent={false}
+          visible={this.state.ppVisible}
+          onRequestClose={() => {
+            Alert.alert('Modal has been closed.');
+          }}>
+          <View style={{backgroundColor: '#001f27'}}>
+            <View
+              style={{
+                height: 120,
+                marginRight: 30,
+                alignItems: 'flex-end',
+                justifyContent: 'flex-end',
+              }}>
+              <TouchableHighlight
+                onPress={() => {
+                  this.setPPVisible(!this.state.ppVisible);
+                }}>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontFamily: 'Poppins-SemiBold',
+                    fontSize: 30,
+                  }}>
+                  X
+                </Text>
+              </TouchableHighlight>
+            </View>
+            <View
+              style={{
+                marginTop: 30,
+                backgroundColor: 'white',
+                borderTopLeftRadius: 20,
+                borderTopRightRadius: 20,
+                padding: 20,
+              }}>
+              <Text style={styles.privacyHeading}>Privacy Policy</Text>
+              <Text style={styles.privacySubheading}>
+                Last updated 15 May 2019
+              </Text>
+              <Text style={styles.privacy}>
+                Loop respects your privacy and is commited to protecting your
+                personal data.
+              </Text>
+            </View>
+          </View>
+        </Modal>
       </View>
     );
   }
